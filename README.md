@@ -5,6 +5,30 @@ A PowerShell script that disables unnecessary background services, telemetry, li
 
 ---
 
+⚙️ How to Use
+
+🛡️ Must be run as Administrator
+
+Download Disable-Windows-Data-Hogs.ps1 to your Desktop.
+
+Open PowerShell as Administrator:
+
+Press Win, type powershell
+
+Right-click > Run as administrator
+
+Run the script with this command:
+
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\Desktop\Disable-Windows-Data-Hogs.ps1"
+
+
+Wait for it to finish — you'll see messages for each disabled service and registry tweak.
+
+Restart your PC.
+
+
+
+
 ## 🎯 Features
 
 This script does the following automatically:
