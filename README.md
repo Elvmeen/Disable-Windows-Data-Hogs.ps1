@@ -19,7 +19,7 @@ Right-click > Run as administrator
 
 Run the script with this command:
 
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\Desktop\Disable-Windows-Data-Hogs.ps1"
+    powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\Desktop\Disable-Windows-Data-Hogs.ps1"
 
 
 Wait for it to finish — you'll see messages for each disabled service and registry tweak.
@@ -27,6 +27,26 @@ Wait for it to finish — you'll see messages for each disabled service and regi
 Restart your PC.
 
 
+🔧 Manual Fix for Delivery Optimization (DoSvc)
+🔹 Registry Path:
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DoSvc
+
+🔹 What to Do:
+
+Press Win + R, type regedit, press Enter
+
+Navigate to:
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DoSvc
+
+
+On the right side, find the entry named: Start
+
+Double-click Start, and set the value to 4
+
+Click OK, close the Registry Editor
+
+Restart your PC
 
 
 ## 🎯 Features
